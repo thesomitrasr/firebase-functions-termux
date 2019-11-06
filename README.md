@@ -18,15 +18,18 @@ Steps for Deploy your First Firebase Functions / Site using Android
 11. Type: cd/storage/YourExternalStorageName/Android/data/com.termux
 
 12. And Hit Enter 
-13. Type: git clone https://github.com/somitrasr/firebase-functions-termux.git
+13. pkg install nodejs. Hit Enter
+14. Then Type:  npm i -g firebase-tools
+15. Hit Enter , this will install firebase on your device
+16. Type: firebase login 
+17. Hit Enter , This will give you a login url. Copy that url and paste it to your chrome browser . Now enter your firebase username and password for login. Come back termux you will see logged in . 
+18. Type "firebase init hosting" and Hit Enter this will setup your hosting and don't forget to name your directory . In My Case I will choose "public".  
+19. Now Clone this repo using git clone
+20. Type for cloning "git clone https://github.com/somitrasr/firebase-functions-termux.git"
+21. After Cloning go back to your storage location where you Store this files.
+22. You Now see two files click firebase.json and setup rewrites thats it. And Deploy 
+23. Now you can Host static website or Dynamic web app with server side using firebase & Smartphone.
 
-14. After cloning repository 
-15. Type: pkg install nodejs 
-16. Hit Enter 
-17. Then Type:  npm i -g firebase-tools
-18. Hit Enter , this will install firebase on your device
-19. Type: firebase login 
-20. Hit Enter , This will give you a login url. Copy that url and paste it to your chrome browser . Now enter your firebase username and password for login. Come back termux you will see logged in . 
 
 For Initiating : firebase init
 For deploy : firebase deploy
